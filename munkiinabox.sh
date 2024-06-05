@@ -17,7 +17,7 @@
 
 # Establish our Basic Variables:
 
-REPOLOC="/Library/Server/Web/Data/Sites/Default"
+REPOLOC="/Library/WebServer/Documents/"
 REPONAME="munki_repo"
 REPODIR="${REPOLOC}/${REPONAME}"
 LOGGER="/usr/bin/logger -t Munki-in-a-Box"
@@ -34,9 +34,9 @@ AUTOPKGARRAY=($AUTOPKGRUN)
 DEFAULTS="/usr/bin/defaults"
 AUTOPKG="/usr/local/bin/autopkg"
 MAINPREFSDIR="/Library/Preferences"
-ADMINUSERNAME="ladmin"
+ADMINUSERNAME="abe"
 SCRIPTDIR="/usr/local/bin"
-HTPASSWD="YouNeedToChangeThis"
+HTPASSWD="$2y$05$PhFvafRytMP8V7ATB/R/J.aqC9vosJXevTe9/LGVF33ZCDUoEOspa"
 
 
 echo "Welcome to Munki-in-a-Box. We're going to get things rolling here with a couple of tests"'!'
